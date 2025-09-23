@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigation, useParams } from "react-router-dom";
+import { Link, useNavigate, useNavigation, useParams } from "react-router-dom";
 import Loader from "../../ErrorPages/Loader";
 import { CiSquareInfo } from "react-icons/ci";
+import { saveLawyer } from "../../database/LawyerDB";
+import { Helmet } from "react-helmet";
 
 const LawyerDetails = () => {
     const regNum = useParams()
     const [lawyer, setLawyer] = useState(null);
     const navigation = useNavigation()
+    const navigate = useNavigate()
     useEffect(()=>{
         fetch("/law.json")
         .then(res => res.json())
@@ -19,9 +22,19 @@ const LawyerDetails = () => {
     if( navigation.state === 'loading' || lawyer === null){
         return <Loader></Loader>
     }
-    const {photo, name, experience, specialty, registrationNumber, availableDays, fee} = lawyer
+    const {photo, name, experience, specialty, registrationNumber, availableDays, fee} = lawyer;
+    const handleBooking = () =>{
+        const added = saveLawyer(lawyer)
+        if(added){
+            navigate('/mybookings')
+        }
+    }
+
     return (
         <div className="my-10 space-y-7 md:w-[75%] mx-auto py-3">
+            <Helmet>
+                <title>Details Of - {name}</title>
+            </Helmet>
 {/* details header */}
             <div className="bg-gray-200 text-center rounded-xl py-8 space-y-6">
                 <h2 className="text-[40px] font-bold">Lawyer’s Profile Details</h2>
@@ -67,11 +80,9 @@ const LawyerDetails = () => {
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.
           </h2>    
-            <Link to={'/mybookings'}>
             <button
-            onClick={"handleBooking"}
+            onClick={handleBooking}
             className="w-full py-3 my-4 rounded-full text-xl font-bold bg-blue-500 hover:bg-blue-600 text-white duration-500">Book Appointment Now</button>
-            </Link>
       </div>
         </div>
     );

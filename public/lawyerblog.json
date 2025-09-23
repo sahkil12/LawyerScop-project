@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What should I look for when choosing a lawyer for my case?",
+    "answer": "Check the lawyer’s area of expertise, years of experience, reputation, and client reviews. Make sure they are licensed and have handled similar cases before.",
+    "addedDate": "2025-09-01"
+  },
+  {
+    "id": 2,
+    "question": "How can I verify if a lawyer is licensed in Bangladesh?",
+    "answer": "You can contact the Bangladesh Bar Council or visit its official website to confirm a lawyer’s registration and license status.",
+    "addedDate": "2025-09-02"
+  },
+  {
+    "id": 3,
+    "question": "What documents should I bring to my first meeting with a lawyer?",
+    "answer": "Bring any contracts, notices, evidence, identification documents, and any correspondence related to your legal issue.",
+    "addedDate": "2025-09-03"
+  },
+  {
+    "id": 4,
+    "question": "How much do lawyers typically charge for a consultation?",
+    "answer": "Fees vary by lawyer and case type. Some offer free initial consultations, while others charge a fixed fee or hourly rate.",
+    "addedDate": "2025-09-04"
+  },
+  {
+    "id": 5,
+    "question": "Can a lawyer represent me in any court in Bangladesh?",
+    "answer": "Not always. Some lawyers are licensed for specific courts or jurisdictions. Ask about their practice area and court permissions.",
+    "addedDate": "2025-09-05"
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between a solicitor and an advocate?",
+    "answer": "A solicitor usually handles legal paperwork and advice, while an advocate appears in court on behalf of clients.",
+    "addedDate": "2025-09-06"
+  },
+  {
+    "id": 7,
+    "question": "How can I prepare for a court hearing with my lawyer?",
+    "answer": "Discuss the facts clearly, organize your documents, prepare your questions, and follow your lawyer’s instructions before appearing in court.",
+    "addedDate": "2025-09-07"
+  },
+  {
+    "id": 8,
+    "question": "Are online legal consultations valid in Bangladesh?",
+    "answer": "Yes, many lawyers offer online consultations. Make sure the lawyer is properly licensed and verify their credentials before sharing sensitive information.",
+    "addedDate": "2025-09-08"
+  },
+  {
+    "id": 9,
+    "question": "What should I include in a written agreement with my lawyer?",
+    "answer": "The agreement should cover scope of services, fees, confidentiality, and termination conditions to avoid misunderstandings.",
+    "addedDate": "2025-09-09"
+  },
+  {
+    "id": 10,
+    "question": "Can I change my lawyer during an ongoing case?",
+    "answer": "Yes, you have the right to change lawyers, but you should review the terms of your agreement and notify the court if required.",
+    "addedDate": "2025-09-10"
+  },
+  {
+    "id": 11,
+    "question": "How do contingency fee arrangements work with lawyers?",
+    "answer": "In a contingency fee arrangement, the lawyer only gets paid if you win the case, usually taking a percentage of the settlement or judgment.",
+    "addedDate": "2025-09-11"
+  },
+  {
+    "id": 12,
+    "question": "What is attorney-client privilege?",
+    "answer": "Attorney-client privilege means your lawyer cannot share confidential information you provide without your consent, except in limited circumstances.",
+    "addedDate": "2025-09-12"
+  },
+  {
+    "id": 13,
+    "question": "How can I find a lawyer who specializes in my type of case?",
+    "answer": "Search through bar association directories, legal aid websites, or ask for referrals from friends or professionals familiar with your legal issue.",
+    "addedDate": "2025-09-13"
+  },
+  {
+    "id": 14,
+    "question": "What is a retainer fee in legal services?",
+    "answer": "A retainer fee is an upfront payment you make to secure a lawyer’s services. The lawyer bills against this amount as work is done.",
+    "addedDate": "2025-09-14"
+  },
+  {
+    "id": 15,
+    "question": "When should I hire a lawyer instead of handling a legal issue myself?",
+    "answer": "Hire a lawyer if the issue involves large sums of money, complex legal rules, risk of jail, or long-term consequences.",
+    "addedDate": "2025-09-15"
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between civil and criminal lawyers?",
+    "answer": "Civil lawyers handle disputes between individuals or organizations, while criminal lawyers defend or prosecute people accused of crimes.",
+    "addedDate": "2025-09-16"
+  },
+  {
+    "id": 17,
+    "question": "How can I keep my legal costs under control?",
+    "answer": "Ask for a written fee agreement, request regular billing statements, and discuss ways to handle some tasks yourself to reduce hours billed.",
+    "addedDate": "2025-09-17"
+  },
+  {
+    "id": 18,
+    "question": "Can a lawyer refuse to take my case?",
+    "answer": "Yes, lawyers can refuse a case if there is a conflict of interest, lack of expertise, workload issues, or ethical concerns.",
+    "addedDate": "2025-09-18"
+  },
+  {
+    "id": 19,
+    "question": "What is legal aid and how can I qualify?",
+    "answer": "Legal aid provides free or low-cost legal services to people who cannot afford a lawyer. Eligibility depends on income, case type, and local rules.",
+    "addedDate": "2025-09-19"
+  },
+  {
+    "id": 20,
+    "question": "What should I do if I am unhappy with my lawyer’s performance?",
+    "answer": "First, discuss your concerns directly with the lawyer. If the issue persists, you may change lawyers or file a complaint with the bar association.",
+    "addedDate": "2025-09-20"
+  }
+]

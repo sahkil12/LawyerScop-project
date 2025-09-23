@@ -140,7 +140,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-6">
           <Link className="hidden sm:flex md:px-7 px-5 py-2 md:py-3 rounded-full font-bold bg-blue-600 text-white hover:bg-blue-700 md:text-lg ">
-            Emergency
+            Contact Now
           </Link>
             
         </div>

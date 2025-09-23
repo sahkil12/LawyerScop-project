@@ -19,9 +19,9 @@ export const saveLawyer = (lawyer) =>{
     }
     else{
         lawyers.push(lawyer)
-        localStorage.setItem("lawyers", lawyers)
+        localStorage.setItem("lawyers", JSON.stringify(lawyers))
         toast.success(`Appointment Scheduled for ${lawyer.name} successfully `
-            , {duration: 1500,}
+            , {duration: 1500}
         )
         return true
     }
