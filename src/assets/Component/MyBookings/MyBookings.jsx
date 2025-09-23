@@ -4,6 +4,8 @@ import { getLawyers, removeLawyer } from "../../database/LawyerDB";
 import MyBooking from "./MyBooking";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import EmptyPage from "../../ErrorPages/EmptyPage";
+import { useNavigation } from "react-router-dom";
+import Loader from "../../ErrorPages/Loader";
 
 const MyBookings = () => {
     // chart data ---
@@ -30,6 +32,7 @@ const TriangleBar = (props) => {
         name:law.name,
         fee:law.fee,
     }))
+    const navigation = useNavigation()
     const handleRemoveLawyer = id =>{
         removeLawyer(id)
         const storedRemainingLawyer = getLawyers()
@@ -37,6 +40,9 @@ const TriangleBar = (props) => {
     }
     if(bookedLawyers.length === 0){
         return <EmptyPage></EmptyPage>
+    }
+    if(navigation.state==='loading'){
+        return <Loader></Loader>
     }
     return (
         <div className="my-10 space-y-8 ">

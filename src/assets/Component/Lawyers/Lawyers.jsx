@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Lawyer from "./Lawyer";
+import { useNavigation } from "react-router-dom";
+import Loader from "../../ErrorPages/Loader";
 
 const Lawyers = () => {
 const [lawyers, setLawyers] = useState([]);
 const [initialLawyers, setInitialLawyers] =useState(8)
-
+    const navigation = useNavigation()
 useEffect(() => {
     fetch('/law.json')
         .then(res => res.json())
@@ -21,6 +23,7 @@ const visibleLawyers = lawyers.slice(0, initialLawyers);
             </div>
                 {/* dynamic lawyers card data */}
                <div className="grid my-7 py-6 mx-3 grid-cols-1 2xl:grid-cols-2 gap-8">
+                {navigation.state === 'loading' && <Loader></Loader>}
                 {
                     visibleLawyers.map((lawyer, idx) => <Lawyer key={idx} lawyer={lawyer}></Lawyer>)
                 }
