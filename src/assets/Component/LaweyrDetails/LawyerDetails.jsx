@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigation, useParams } from "react-router-dom";
+import { Link, useNavigation, useParams } from "react-router-dom";
 import Loader from "../../ErrorPages/Loader";
 import { CiSquareInfo } from "react-icons/ci";
 
@@ -67,9 +67,11 @@ const LawyerDetails = () => {
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.
           </h2>    
+            <Link to={'/mybookings'}>
             <button
             onClick={"handleBooking"}
             className="w-full py-3 my-4 rounded-full text-xl font-bold bg-blue-500 hover:bg-blue-600 text-white duration-500">Book Appointment Now</button>
+            </Link>
       </div>
         </div>
     );
