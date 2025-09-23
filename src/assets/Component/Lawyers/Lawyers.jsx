@@ -25,10 +25,11 @@ const visibleLawyers = lawyers.slice(0, initialLawyers);
                     visibleLawyers.map((lawyer, idx) => <Lawyer key={idx} lawyer={lawyer}></Lawyer>)
                 }
                </div>
-               <button
+               {
+                initialLawyers < lawyers.length && <button
                onClick={()=>setInitialLawyers(lawyers.length)}
-               className="mx-auto my-3 px-12 py-3 rounded-full font-bold text-xl bg-blue-600 hover:bg-blue-700 duration-300 text-white">View Details</button>
-
+               className="mx-auto my-3 px-12 py-3 rounded-full font-bold text-xl bg-blue-600 hover:bg-blue-700 duration-300 text-white">View All Lawyers</button>
+               }
         </div>
     );
 };

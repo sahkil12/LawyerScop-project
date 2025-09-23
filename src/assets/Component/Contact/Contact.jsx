@@ -1,8 +1,9 @@
+import ErrorPage from "../../ErrorPages/ErrorPage";
 
 const Contact = () => {
     return (
         <div>
-                <h2 className='text-4xl text-center'>Contact Us</h2>
+                <ErrorPage></ErrorPage>
         </div>
     );
 };

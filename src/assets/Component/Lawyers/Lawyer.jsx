@@ -16,7 +16,7 @@ const Lawyer = ({lawyer}) => {
                 <h3 className="text-lg text-neutral-600 font-medium">
                     License No: {registrationNumber}
                 </h3>
-                <Link to={'/mybookings'}>
+                <Link to={`/lawyersDetails/${registrationNumber}`}>
                 <button className="w-full my-3 border px-7 py-1 rounded-full font-semibold text-lg border-blue-300 hover:bg-blue-600 duration-300 hover:text-white">View Details</button>
                 </Link>
             </div>

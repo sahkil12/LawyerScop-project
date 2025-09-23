@@ -13,6 +13,7 @@ import ErrorPage from './assets/ErrorPages/ErrorPage.jsx';
 import MyBookings from './assets/Component/MyBookings/MyBookings.jsx';
 import Blogs from './assets/Component/Blogs/Blogs.jsx';
 import Contact from './assets/Component/Contact/Contact.jsx';
+import LawyerDetails from './assets/Component/LaweyrDetails/LawyerDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
       path:'myBookings',
       Component:MyBookings,
+    },
+    {
+      path:'lawyersDetails/:regNum',
+      Component:LawyerDetails,
     },
     {
       path:'blogs',
